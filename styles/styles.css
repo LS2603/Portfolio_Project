@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333; 
+    background-color: slategrey; 
     color: #fff; 
 }
 
@@ -25,10 +25,49 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff9800; 
+    color: #ff9800;
+    transform: scale(1.5); 
+    border-bottom: 2px solid #ff9800; 
+}
+
+#about-me {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.about-me-info {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.about-me-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.about-me-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-me-images img:hover {
+    transform: scale(1.6);
 }
