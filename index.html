@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam_Snowball_Portfilio</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -33,33 +34,45 @@
             <img src = "./images/L&D3.jpg">
         </div>
     </section>
-    <section id = "projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <p>Below are links to my current portfolio, feel free to look and leave any feedback in the provided boxes</p>
-        <ul>
-            <li>First Portfolio</li>
-        </ul>
-        <form>
-            <label for="feedback">Feedback for Projects</label>
-            <br>
-            <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <section id = "skills">
+        <p>Below are links to my current portfolio. Feel free to explore and leave feedback:</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>First Portfolio</h3>
+                <p>A brief description of this project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>    
+    <section id="skills">
         <h2>Skills</h2>
-        <ul id = "skills_list">
+        <ul id="skills_list">
             <li>HTML</li>
             <li>CSS</li>
-            <li>JS</li>
-            <li>SQL</is>
+            <li>JavaScript</li>
+            <li>SQL</li>
+        </ul>
+    </section>    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email, LinkedIn, or phone:</p>
+        <ul class="contact-list">
+            <li>
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:liam.snowball26@gmail.com">liam.snowball26@gmail.com</a>
+            </li>
+            <li>
+                <i class="fab fa-linkedin"></i> 
+                <a href="https://www.linkedin.com/in/your-profile/" target="_blank">LinkedIn Profile</a>
+            </li>
+            <li>
+                <i class="fas fa-phone"></i> 
+                +44 123 456 7890
+            </li>
         </ul>
     </section>
-    <section id = "contact">
-        <p>Email Address: liam.snowball26@gmail.com</p>
-        <p>Linkedin: </p>
-        <p>Telephone: </p>
-    </section>
+    
 </body>
 </html>
